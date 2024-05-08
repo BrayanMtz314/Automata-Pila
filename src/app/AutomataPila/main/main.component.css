@@ -1,0 +1,18 @@
+.row {
+  padding: 10px 150px 20px;
+    display: flex;
+    flex-flow: row;
+  }
+
+
+  .col {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+
+  .titulo {
+    text-align: center;
+    border: 5px solid black;
+    background-color: rgba(144, 161, 128, 0.76);
+  }
+

@@ -1,0 +1,17 @@
+
+.container{
+    background-color: bisque;
+    padding: 5px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+  }
+
+
+  .box{
+    border: 1px solid black;
+    font-size: 15px;
+    text-align: center;
+    
+  }

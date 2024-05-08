@@ -1,0 +1,16 @@
+
+.container{
+    background-color: bisque;
+    padding: 5px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+  .box{
+    border: 1px solid black;
+    font-size: 15px;
+    text-align: center;
+    padding: 2px;
+  }
