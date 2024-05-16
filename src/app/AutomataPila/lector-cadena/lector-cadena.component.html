@@ -11,8 +11,16 @@
     }
 </div>
 @if (ganaste) {
-  <h3>Cadena Valida</h3>
+  <h3 style="color: rgb(31, 161, 31) ">Cadena Valida!</h3>
 }
 @if (perdiste) {
-  <h3>Cadena Invalida</h3>
+  <h3 style="color: rgb(212, 26, 26);">Cadena Invalida!</h3>
 }
+<div >
+  <hr/>
+  <h3>Registro De Estados</h3>
+  <p><strong>Caracter actual: </strong>{{caracterActual}}</p>
+  <p><strong>Cima de la pila: </strong>{{cimaPila}}</p>
+  <p><strong>Estado Actual: q</strong>{{this.q}}</p>
+</div>
+

@@ -17,6 +17,9 @@ export class LectorCadenaComponent {
   ganaste: boolean = false;
   perdiste: boolean = false;
   intervalo: any;
+  cimaPila: string = '0';
+  caracterActual: string = '0';
+
   q: number = 0;
 
   constructor(private validadorService: ValidadorService) {}
@@ -35,8 +38,10 @@ export class LectorCadenaComponent {
       if (this.i < this.cadenaValidar.length && !this.ganaste && !this.perdiste) {
         const caracterActual = this.cadenaValidar.charAt(this.i);
         const cima = this.validadorService.peek();
+        this.cimaPila = cima;
+        this.caracterActual = caracterActual;
         
-        console.log(caracterActual, cima, this.q); // Depuración
+        console.log("Caracter actual: " + caracterActual + " Cima: " + cima + " Estado: q" + this.q); // Depuración
         switch(this.q){
           case 1:
             this.qState1(caracterActual, cima);
@@ -60,7 +65,7 @@ export class LectorCadenaComponent {
       } else {
         clearInterval(this.intervalo);
       }
-    }, 500);
+    }, 700);
   }
 
   qState1(caracterActual: string, cima: string | null) {
