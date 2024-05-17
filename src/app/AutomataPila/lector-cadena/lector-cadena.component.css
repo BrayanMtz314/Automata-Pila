@@ -14,3 +14,9 @@
     text-align: center;
     padding: 2px;
   }
+
+  .alert-custom {
+    background-color: #28a745; /* Verde personalizado */
+    color: white; /* Color del texto */
+  }
+

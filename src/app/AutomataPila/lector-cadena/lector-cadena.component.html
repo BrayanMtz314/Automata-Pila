@@ -1,8 +1,10 @@
-<h3>Ingresa cadena</h3>
+
+<h3 >Ingresa cadena</h3>
 <form (ngSubmit)="validar()">
   <input type="text" name="cadena" [(ngModel)]="cadena" />
   <button type="submit">validar</button>
 </form>
+
 <hr />
 <h3>Cadena a Validar</h3>
 <div class="container">
@@ -11,13 +13,14 @@
     }
 </div>
 @if (ganaste) {
-  <h3 style="color: rgb(31, 161, 31) ">Cadena Valida!</h3>
+  <h3 class="alert alert-custom">Cadena Valida!</h3>
 }
 @if (perdiste) {
-  <h3 style="color: rgb(212, 26, 26);">Cadena Invalida!</h3>
+  <h3 class="alert alert-danger">Cadena Invalida!</h3>
 }
+<hr/>
 <div >
-  <hr/>
+
   <h3>Registro De Estados</h3>
   <p><strong>Caracter actual: </strong>{{caracterActual}}</p>
   <p><strong>Cima de la pila: </strong>{{cimaPila}}</p>
